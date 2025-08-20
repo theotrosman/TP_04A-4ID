@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -8,52 +7,9 @@
 
 body {
   background-color: #121212;
-  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-/* Header */
-header {
-  background-color: #1f1f1f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  border-bottom: 2px solid #00c2ff;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-header .logo img {
-  height: 40px;
-}
-
-header h1 {
-  font-size: 1.8rem;
-  color: #00c2ff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #e0e0e0;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00c2ff;
 }
 
 .model-container {
@@ -65,28 +21,53 @@ nav a:hover {
 model-viewer {
   width: 600px;
   height: 600px;
-  border-radius: 10px;
 }
-
-
-/* Contenido */
 .content {
-  max-width: 900px;
-  margin: 0 auto 40px;
-  padding: 20px;
   text-align: center;
+  color: #bb1313; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.btn {
+  background-color: #bb1313; 
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgb(228, 124, 55); 
+}
+
 
 .content h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #00c2ff;
-}
+  color: #bb1313; 
+  text-shadow:
+    -1px -1px 0 #ff7c7c,
+    0.5px -0.5px 0 #ff7c7c,
+    -1px 1px 0 #ff7c7c,
+    1px 1px 0 #ff7c7c;
+    opacity: 90%;
+} /* CÓDIGO DE GITHUB */
 
 .content p {
   font-size: 1.2rem;
   margin-bottom: 25px;
   color: #cfcfcf;
+  opacity: 80%;
 }
 
 .content button {
