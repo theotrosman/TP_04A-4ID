@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terrario Mágico 3D</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MosquiSpy - Compra Insectos Espía</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Importar model-viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
 
-    <!-- Importa el componente model-viewer -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <header>
+    <div class="logo">
+      <img src="4abc9ae8-0494-48de-8a0c-fb8aac6bec57.png" alt="Logo MosquiSpy" />
+      <h1>MosquiSpy</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Comprar</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <style>
-      body {
-        margin: 0;
-        background-color: #121212;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      model-viewer {
-        width: 100%;
-        max-width: 800px;
-        height: 600px;
-        background-color: #1e1e1e;
-        border: 2px solid #00c2ff;
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-
-  <body>
+  <section class="model-container">
     <model-viewer
       src="magical_insect_terrarium.glb"
-      alt="Terrario Mágico de Insectos"
+      alt="MosquiSpy Insecto Espía"
       ar
-      ar-modes="webxr scene-viewer quick-look"
       camera-controls
       auto-rotate
       shadow-intensity="1"
       exposure="1.2"
       environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
       touch-action="pan-y"
-    >
-    </model-viewer>
-  </body>
+    ></model-viewer>
+  </section>
+
+  <section class="content">
+    <h2>Compra Insectos Espía</h2>
+    <p>Explora nuestra exclusiva colección de insectos espía equipados con tecnología avanzada para vigilancia discreta.</p>
+    <button>Comprar ahora</button>
+  </section>
+
+</body>
 </html>
