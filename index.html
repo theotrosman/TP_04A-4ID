@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terrario Mágico 3D</title>
+
+    <!-- Importa el componente model-viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      model-viewer {
+        width: 100%;
+        max-width: 800px;
+        height: 600px;
+        background-color: #1e1e1e;
+        border: 2px solid #00c2ff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <model-viewer
+      src="magical_insect_terrarium.glb"
+      alt="Terrario Mágico de Insectos"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      exposure="1.2"
+      environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+      touch-action="pan-y"
+    >
+    </model-viewer>
+  </body>
+</html>
