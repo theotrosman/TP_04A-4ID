@@ -1,4 +1,4 @@
-# MosquiSpy - [Sitio Web](https://mosquispy.netlify.app)
+# MosquiSpy - [Sitio Web](https://mosquispy.netlify.app) 🪰
 
 Sitio web para MosquiSpy, un producto de insectos espía con tecnología avanzada para vigilancia discreta y efectiva.
 
