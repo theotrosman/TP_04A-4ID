@@ -90,6 +90,9 @@ model-viewer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 16px 32px;
   background-color: #121212;
   border-bottom: 2px solid #bb1313;
@@ -758,5 +761,6 @@ model-viewer {
 .perfil .form-actions {
   text-align: center;
 }
+
 
 
