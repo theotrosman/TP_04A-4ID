@@ -509,7 +509,7 @@ model-viewer {
   color: #ff3b3b;
   font-weight: 700;
   margin: 0;
-  text-align: left;
+  text-align: center;
   text-shadow: 0 0 8px #bb1313;
 }
 
@@ -535,6 +535,7 @@ model-viewer {
   color: #fff;
   font-size: 1rem;
   min-width: 160px;
+  margin-top: 3%;
   box-shadow: 0 0 8px #bb1313aa;
 }
 
@@ -563,7 +564,7 @@ model-viewer {
   margin-top: 1.5rem;
   font-size: 2.5rem;
   font-weight: 800;
-  margin-right: 2%;
+  margin-right: 10%;
   color: #ff3b3b;
   letter-spacing: 1px;
   text-shadow: 0 0 8px #bb1313;
