@@ -172,6 +172,7 @@ model-viewer {
   object-fit: contain;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .nav-img:hover {
