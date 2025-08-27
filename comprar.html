@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tienda</title>
+    <title>Tienda - MosquiSpy</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.0.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <header class="header-neon">
@@ -14,24 +15,27 @@
         </div>
         <nav class="nav">
             <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Inicio</a></li>
-            <li><a href="comprar.html" class="nav-link">Catálogo</a></li>
-            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-            <li><img src="Perfil.png" class="nav-img"></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="comprar.html" class="nav-link">Catálogo</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><img src="Perfil.png" class="nav-img"></li>
             </ul>
         </nav>
     </header>
+    
     <section class="tienda1">
-    <div class="Lado-Adyacente-iz"></div>
-    <div class="Descuento">
-        <h2>2x1 en...<br>el mejor bicho!</h2>
-        <div class="oferta-img">
-            <img src="https://via.placeholder.com/750x450/222/fff?text=Imagen" alt="Producto en oferta">
+        <div class="Lado-Adyacente-iz"></div>
+        <div class="Descuento">
+            <h2>2x1 en...<br>el mejor bicho!</h2>
+            <div class="oferta-img">
+                <img src="https://via.placeholder.com/750x450/222/fff?text=Imagen" alt="Producto en oferta">
+            </div>
         </div>
-    </div>
-    <div class="Lado-Adyacente-de"></div>
+        <div class="Lado-Adyacente-de"></div>
     </section>
+
     <section class="separacion"></section>
+
     <section class="busqueda">
         <div class="busqueda-col grow1 grow1-1">Ofertas</div>
         <div class="busqueda-col grow6">
@@ -40,48 +44,161 @@
         </div>
         <div class="busqueda-col grow1 grow1-2">Ordenar por</div>
     </section>
+
     <section class="tienda2">
         <div class="Lado-Adyacente-iz"></div>
         <div class="productos">
+            <!-- Producto 1 -->
             <div class="producto-card">
                 <div class="producto-img-container">
-                    <img src="https://via.placeholder.com/220x220/ccd2da/7b8794?text=Imagen" alt="Producto" class="producto-img">
-                    <button class="btn-3d" title="">Mirar imagen 3D</button>
+                    <model-viewer 
+                        src="stylized_insect_monster_red_pbr_low-poly.glb"
+                        alt="Insecto Espía 3D"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d">Mirar imagen 3D</button>
                 </div>
                 <div class="producto-info">
-                    <div class="producto-header">
-                    <h2 class="producto-nombre">Nombre producto</h2>
+                    <h2 class="producto-nombre">Insecto Estilizado</h2>
                     <div class="producto-datos">
                         <div>
                             <div>Peso:</div>
-                            <div>Otra cosa:</div>
-                            <div>Otra cosa:</div>
-                            <div>Otra cosa:</div>
+                            <div>300g</div>
+                            <div>Otro dato:</div>
+                            <div>5cm</div>
                         </div>
                         <div class="producto-descripcion">
-                            <div>Descripción</div>
-                            <div>asddasda</div>
-                            <div>dasdasdas</div>
+                            <div>Descripción:</div>
+                            <div>Insecto futurista con detalles estilizados.</div>
                         </div>
                     </div>
                     <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">500 USD</div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <div class="producto-img-container">
+                    <model-viewer 
+                        src="mechanical_wasp_mid_poly.glb"
+                        alt="Avispa Mecánica"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d">Mirar imagen 3D</button>
+                </div>
+                <div class="producto-info">
+                    <h2 class="producto-nombre">Avispa Mecánica</h2>
+                    <div class="producto-datos">
+                        <div>
+                            <div>Peso:</div>
+                            <div>500g</div>
+                            <div>Otra cosa:</div>
+                            <div>7cm</div>
+                        </div>
+                        <div class="producto-descripcion">
+                            <div>Descripción:</div>
+                            <div>Avispa robótica, perfecta para espionaje.</div>
+                        </div>
                     </div>
-                    <div class="producto-precio">
-                    4000 USD
+                    <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">650 USD</div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <div class="producto-img-container">
+                    <model-viewer 
+                        src="the_lesser_albatrossappias_paulina.glb"
+                        alt="Albatros Insecto"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d">Mirar imagen 3D</button>
+                </div>
+                <div class="producto-info">
+                    <h2 class="producto-nombre">Albatros Insecto</h2>
+                    <div class="producto-datos">
+                        <div>
+                            <div>Peso:</div>
+                            <div>800g</div>
+                            <div>Otros datos:</div>
+                            <div>10cm</div>
+                        </div>
+                        <div class="producto-descripcion">
+                            <div>Descripción:</div>
+                            <div>Un insecto volador avanzado y aerodinámico.</div>
+                        </div>
                     </div>
+                    <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">800 USD</div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card">
+                <div class="producto-img-container">
+                    <model-viewer 
+                        src="cyber_bug_sci-fi_robotic_insect.glb"
+                        alt="Bicho Robótico Sci-Fi"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d">Mirar imagen 3D</button>
+                </div>
+                <div class="producto-info">
+                    <h2 class="producto-nombre">Bicho Robótico Sci-Fi</h2>
+                    <div class="producto-datos">
+                        <div>
+                            <div>Peso:</div>
+                            <div>1kg</div>
+                            <div>Otros detalles:</div>
+                            <div>15cm</div>
+                        </div>
+                        <div class="producto-descripcion">
+                            <div>Descripción:</div>
+                            <div>Un bicho robótico con tecnología avanzada.</div>
+                        </div>
+                    </div>
+                    <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">1000 USD</div>
                 </div>
             </div>
         </div>
         <div class="Lado-Adyacente-de"></div>
     </section>
+
     <footer class="footer-neon">
         <p>&copy; 2025 MosquiSpy. Todos los derechos reservados.</p>
         <nav class="nav">
             <ul class="nav-list">
-            <li><img src="Instagram.png" class="nav-img"></li>
-            <li><img src="Youtube.png" class="nav-img"></li>
-            <li><img src="X.png" class="nav-img"></li>
-            <li><img src="TikTok.png" class="nav-img"></li>
+                <li><img src="Instagram.png" class="nav-img"></li>
+                <li><img src="Youtube.png" class="nav-img"></li>
+                <li><img src="X.png" class="nav-img"></li>
+                <li><img src="TikTok.png" class="nav-img"></li>
             </ul>
         </nav>
     </footer>

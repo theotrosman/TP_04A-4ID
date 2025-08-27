@@ -12,22 +12,34 @@
 
 
   <section class="model-container">
-    <model-viewer
-  src="magical_insect_terrarium.glb"
-  alt="MosquiSpy Insecto Espía"
-  ar 
-  camera-controls 
-  autoplay 
-  auto-rotate 
-  rotation-per-second="20deg" 
-  auto-rotate-delay="0"
-  shadow-intensity="1"
-  exposure="1.5"
-  environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr" 
-  touch-action="pan-y"
-></model-viewer>
+  <model-viewer
+    id="spider"
+    src="animated_low-poly_spider_game-ready.glb"
+    alt="Araña animada"
+    ar
+    camera-controls
+    autoplay
+    shadow-intensity="1"
+    exposure="1.5"
+    environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+    touch-action="pan-y">
+  </model-viewer>
 
-  </section>
+  <script type="module">
+    const spiderModel = document.getElementById('spider');
+
+    spiderModel.addEventListener('load', () => {
+      const anims = spiderModel.availableAnimations;
+      if (anims.includes('walk_ani_vor')) {
+        spiderModel.animationName = 'walk_ani_vor';
+        spiderModel.play();
+        spiderModel.loop = true;
+      } else {
+        console.warn('La animación "walk_ani_vor" no se encontró. Animaciones disponibles:', anims);
+      }
+    });
+  </script>
+</section>
 
   <section class="content">
   <h2>MOSQUISPY</h2>
