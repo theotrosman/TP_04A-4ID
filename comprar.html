@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="tienda1">
         <div class="Lado-Adyacente-iz"></div>
         <div class="Descuento">
@@ -48,12 +48,12 @@
     <section class="tienda2">
         <div class="Lado-Adyacente-iz"></div>
         <div class="productos">
-            <!-- Producto 1 -->
+            <!-- Producto 1: Insecto Estilizado -->
             <div class="producto-card">
                 <div class="producto-img-container">
                     <model-viewer 
                         src="stylized_insect_monster_red_pbr_low-poly.glb"
-                        alt="Insecto Espía 3D"
+                        alt="Insecto Estilizado"
                         camera-controls
                         shadow-intensity="1"
                         environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
@@ -62,7 +62,7 @@
                         autoplay 
                         loop>
                     </model-viewer>
-                    <button class="btn-3d">Mirar imagen 3D</button>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=stylized_insect_monster_red_pbr_low-poly.glb'">Mirar imagen 3D</button>
                 </div>
                 <div class="producto-info">
                     <h2 class="producto-nombre">Insecto Estilizado</h2>
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <!-- Producto 2 -->
+            <!-- Producto 2: Avispa Mecánica -->
             <div class="producto-card">
                 <div class="producto-img-container">
                     <model-viewer 
@@ -97,7 +97,7 @@
                         autoplay 
                         loop>
                     </model-viewer>
-                    <button class="btn-3d">Mirar imagen 3D</button>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=mechanical_wasp_mid_poly.glb'">Mirar imagen 3D</button>
                 </div>
                 <div class="producto-info">
                     <h2 class="producto-nombre">Avispa Mecánica</h2>
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <!-- Producto 3 -->
+            <!-- Producto 3: Albatros Insecto -->
             <div class="producto-card">
                 <div class="producto-img-container">
                     <model-viewer 
@@ -132,7 +132,7 @@
                         autoplay 
                         loop>
                     </model-viewer>
-                    <button class="btn-3d">Mirar imagen 3D</button>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=the_lesser_albatrossappias_paulina.glb'">Mirar imagen 3D</button>
                 </div>
                 <div class="producto-info">
                     <h2 class="producto-nombre">Albatros Insecto</h2>
@@ -153,12 +153,12 @@
                 </div>
             </div>
 
-            <!-- Producto 4 -->
+            <!-- Producto 4: Wooden Insect -->
             <div class="producto-card">
                 <div class="producto-img-container">
                     <model-viewer 
-                        src="cyber_bug_sci-fi_robotic_insect.glb"
-                        alt="Bicho Robótico Sci-Fi"
+                        src="wooden_insect.glb"
+                        alt="Wooden Insect"
                         camera-controls
                         shadow-intensity="1"
                         environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
@@ -167,26 +167,97 @@
                         autoplay 
                         loop>
                     </model-viewer>
-                    <button class="btn-3d">Mirar imagen 3D</button>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=wooden_insect.glb'">Mirar imagen 3D</button>
                 </div>
                 <div class="producto-info">
-                    <h2 class="producto-nombre">Bicho Robótico Sci-Fi</h2>
+                    <h2 class="producto-nombre">Insecto de Madera</h2>
                     <div class="producto-datos">
                         <div>
                             <div>Peso:</div>
-                            <div>1kg</div>
-                            <div>Otros detalles:</div>
-                            <div>15cm</div>
+                            <div>350g</div>
+                            <div>Otro dato:</div>
+                            <div>4cm</div>
                         </div>
                         <div class="producto-descripcion">
                             <div>Descripción:</div>
-                            <div>Un bicho robótico con tecnología avanzada.</div>
+                            <div>Insecto con acabado de madera artesanal.</div>
                         </div>
                     </div>
                     <button class="producto-btn">Me interesa</button>
-                    <div class="producto-precio">1000 USD</div>
+                    <div class="producto-precio">550 USD</div>
                 </div>
             </div>
+
+            <!-- Producto 5: Fly Low Poly -->
+            <div class="producto-card">
+                <div class="producto-img-container">
+                    <model-viewer 
+                        src="fly_low_poly.glb"
+                        alt="Fly Low Poly"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=fly_low_poly.glb'">Mirar imagen 3D</button>
+                </div>
+                <div class="producto-info">
+                    <h2 class="producto-nombre">Mosca Low Poly</h2>
+                    <div class="producto-datos">
+                        <div>
+                            <div>Peso:</div>
+                            <div>150g</div>
+                            <div>Otros detalles:</div>
+                            <div>3cm</div>
+                        </div>
+                        <div class="producto-descripcion">
+                            <div>Descripción:</div>
+                            <div>Modelo de mosca en estilo low poly.</div>
+                        </div>
+                    </div>
+                    <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">300 USD</div>
+                </div>
+            </div>
+
+            <!-- Producto 6: Ground Beetle -->
+            <div class="producto-card">
+                <div class="producto-img-container">
+                    <model-viewer 
+                        src="ground_beetle_-_insect.glb"
+                        alt="Ground Beetle Insect"
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                        touch-action="pan-y"
+                        auto-rotate 
+                        autoplay 
+                        loop>
+                    </model-viewer>
+                    <button class="btn-3d" onclick="window.location.href='3dmodel-viewer.html?model=ground_beetle_-_insect.glb'">Mirar imagen 3D</button>
+                </div>
+                <div class="producto-info">
+                    <h2 class="producto-nombre">Escarabajo del Suelo</h2>
+                    <div class="producto-datos">
+                        <div>
+                            <div>Peso:</div>
+                            <div>500g</div>
+                            <div>Otros datos:</div>
+                            <div>8cm</div>
+                        </div>
+                        <div class="producto-descripcion">
+                            <div>Descripción:</div>
+                            <div>Escarabajo del suelo con un diseño detallado.</div>
+                        </div>
+                    </div>
+                    <button class="producto-btn">Me interesa</button>
+                    <div class="producto-precio">700 USD</div>
+                </div>
+            </div>
+
         </div>
         <div class="Lado-Adyacente-de"></div>
     </section>
