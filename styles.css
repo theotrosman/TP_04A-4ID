@@ -430,7 +430,7 @@ model-viewer {
   grid-template-columns: repeat(3, 1fr); 
   gap: 30px; 
   padding: 20px;
-  margin: 0 22.5%; 
+  margin: 0 25%; 
   margin-top: 30px; 
 }
 
@@ -758,4 +758,5 @@ model-viewer {
 .perfil .form-actions {
   text-align: center;
 }
+
 
