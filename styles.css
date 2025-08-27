@@ -426,17 +426,18 @@ model-viewer {
 }
 
 .productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #222;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+  padding: 20px;
+  margin: 0 22.5%; 
+  margin-top: 30px; 
 }
 
 .producto-card {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   background: #181818;
   border: 2px solid #bb1313;
   padding: 2rem 2rem 1.5rem 2rem;
@@ -445,6 +446,7 @@ model-viewer {
   gap: 2.5rem;
   box-shadow: 0 0 24px #bb1313aa;
   color: #fff;
+  border-radius: 10px;
 }
 
 .producto-img-container {
@@ -487,6 +489,7 @@ model-viewer {
   box-shadow: 0 0 10px #bb1313aa;
   text-shadow: 0 0 8px #ff3b3b;
 }
+
 .producto-img-container:hover .btn-3d {
   opacity: 1;
   pointer-events: all;
@@ -499,12 +502,6 @@ model-viewer {
   flex-direction: column;
   justify-content: space-between;
   min-width: 0;
-}
-
-.producto-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
 }
 
 .producto-nombre {
@@ -555,6 +552,7 @@ model-viewer {
   box-shadow: 0 0 10px #bb1313aa;
   text-shadow: 0 0 8px #ff3b3b;
 }
+
 .producto-btn:hover {
   background: #ff3b3b;
   color: #181818;
@@ -565,6 +563,7 @@ model-viewer {
   margin-top: 1.5rem;
   font-size: 2.5rem;
   font-weight: 800;
+  margin-right: 2%;
   color: #ff3b3b;
   letter-spacing: 1px;
   text-shadow: 0 0 8px #bb1313;
@@ -572,57 +571,4 @@ model-viewer {
   border: 2px solid #bb1313;
   border-radius: 3px;
   text-align: center;
-}
-
-.productos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
-  gap: 20px;
-}
-
-.producto-card {
-  background: #222;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #bb1313;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.producto-img-container {
-  width: 220px;
-  height: 220px;
-  background: #333;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.producto-info {
-  margin-top: 15px;
-}
-
-.producto-nombre {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff3b3b;
-}
-
-.producto-btn {
-  background-color: #bb1313;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-top: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.producto-btn:hover {
-  background-color: #ff3b3b;
 }
