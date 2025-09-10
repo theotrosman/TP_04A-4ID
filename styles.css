@@ -681,6 +681,71 @@ model-viewer {
   text-align: center;
 }
 
+.busqueda {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: #242424;
+  padding: 20px 50px; /* reemplaza margin-left/margin-right */
+}
+
+.busqueda-col {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+  text-shadow: rgb(107, 107, 107) 0 0 5px;
+  cursor: pointer;
+}
+
+.busqueda-col:hover {
+  color: #bb1313;
+  text-shadow: #bb1313 0 0 8px;
+}
+
+.busqueda-centro {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.busqueda-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #242424;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 20px #bb131355;
+}
+
+.busqueda-boton {
+  background-color: #790000;
+  border: 2px solid #630000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #121212;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px #bb131355;
+}
+
+.busqueda-boton:hover {
+  background-color: #bb1313;
+  border-color: #790000;
+  box-shadow: 0 0 12px #ff4c4c;
+}
+
+
 
 
 
