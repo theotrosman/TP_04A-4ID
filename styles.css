@@ -336,89 +336,7 @@ model-viewer {
   box-shadow: 0 0 20px #bb131355;
 }
 
-.busqueda {
-  width: 100%;
 
-  display: flex;
-  gap: 16px;
-
-  justify-content: space-between;
-  background-color: #242424;
-}
-
-.busqueda-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-.grow1 {
-  min-width: 90px;
-  justify-content: flex-start;
-  margin-left: 15px;
-  text-shadow: rgb(107, 107, 107) 0 0 5px;
-  cursor: pointer;
-}
-
-.grow1:hover {
-  color: #bb1313;
-  text-shadow: #bb1313 0 0 8px;
-}
-
-.grow1-1 {
-  margin-left: 50px;
-}
-
-.grow1-2 {
-  margin-right: 50px;
-}
-
-.grow6 {
-  flex-grow: 6;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.busqueda-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 3px;
-  font-size: 1rem;
-  text-align: center;
-  background: #000000;
-  color: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 0 0 20px #bb131355;
-  border: 2px solid #242424;
-}
-
-.busqueda-boton {
-  background-color: #790000;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #121212;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 0.3s ease;
-  margin-left: 10px;
-  box-shadow: 0 0 20px #bb131355;
-  border: 2px solid #630000;
-}
-
-.busqueda-boton:hover {
-  background-color: #bb1313;
-  border: 2px solid #790000;
-  color: #121212;
-  box-shadow: 0 0 12px #ff4c4c;
-}
 
 .tienda2 {
   width: 100%;
@@ -762,6 +680,7 @@ model-viewer {
 .perfil .form-actions {
   text-align: center;
 }
+
 
 
 
